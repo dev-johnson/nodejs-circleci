@@ -15,10 +15,11 @@ jobs:
 
 
 workflows:
-  integration:
+  version: 2.1
+  integrations:
     jobs:
       - master-ci:
-        filters:
-          branches:
-            only:
-              - master
+          filters:
+            branches:
+              only:
+                - master
