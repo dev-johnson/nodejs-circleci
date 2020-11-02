@@ -17,4 +17,8 @@ jobs:
 workflows:
   integrations:
     jobs:
-      - master-ci
+      - master-ci:
+          filters:
+            branches:
+              only:
+                - master
