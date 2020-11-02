@@ -11,4 +11,14 @@ jobs:
           command: 'npm install'
       - run:
           name: 'Run test case'
-          command: 'npm install'
+          command: 'npm run test'
+
+
+workflows:
+  integration:
+    jobs:
+      - build:
+        filters:
+          branches:
+            only:
+              - master
