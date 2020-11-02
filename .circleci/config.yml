@@ -1,0 +1,37 @@
+version: 2.1
+
+jobs:
+  prod-ci:
+    docker:
+      - image: circleci/node:12.16.3
+    steps:
+      - checkout
+      - run:
+          name: 'Install dependencies'
+          command: 'npm install'
+      - run:
+          name: 'Run test case'
+          command: 'npm install'
+
+  prod-cd:
+    docker:
+      - image: circleci/node:12.16.3
+    steps:
+      - checkout
+      - run:
+          name: 'Install dependencies'
+          command: 'npm install'
+      - run:
+          name: 'Run test case'
+          command: 'npm install'
+      - run: 'echo Deployment done'
+
+workflows:
+  version: 2.1
+  continuous-Deployment:
+    jobs:
+      - prod-cd:
+          filters:
+            branches:
+              only:
+                - master
