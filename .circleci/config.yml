@@ -15,10 +15,10 @@ jobs:
 
 
 workflows:
-  integration:
+  integrations:
     jobs:
       - master-ci:
-        filters:
-          branches:
-            only:
-              - master
+          filters:
+            branches:
+              only:
+                - master
