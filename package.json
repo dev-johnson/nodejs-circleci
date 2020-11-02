@@ -1,0 +1,29 @@
+{
+  "name": "nodejs-circleci",
+  "version": "1.0.0",
+  "description": "CI-CD integration using circle-ci",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-johnson/nodejs-circleci.git"
+  },
+  "keywords": [
+    "CI",
+    "CD",
+    "Node.JS",
+    "Javascript"
+  ],
+  "author": "Johnson T",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev-johnson/nodejs-circleci/issues"
+  },
+  "homepage": "https://github.com/dev-johnson/nodejs-circleci#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jest": "^26.6.1"
+  }
+}
